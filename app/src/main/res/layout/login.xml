@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:focusable="true"
+    android:focusableInTouchMode="false"
+    android:gravity="center"
+    style="@style/Animation.Design.BottomSheetDialog">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="LOGIN"
+        android:id="@+id/textView12"
+        android:textColor="#101010"
+        android:layout_marginLeft="70dp"
+        android:textSize="30dp"
+        android:layout_marginTop="-10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="User Name"
+        android:id="@+id/textView13"
+        android:layout_marginTop="46dp"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|textAutoComplete"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/blogin2"
+        android:layout_marginTop="57dp"
+        android:textColor="@android:color/primary_text_dark"
+        android:layout_below="@+id/editText2"
+        android:layout_alignEnd="@+id/forPass" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="forgot Password?"
+        android:id="@+id/forPass"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:singleLine="true"
+        android:textColorLink="@android:color/holo_blue_bright"
+        android:textSize="20dp"
+        android:textColor="#101010"
+        android:layout_below="@+id/blogin2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+
+
+</RelativeLayout>

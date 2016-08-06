@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:background="@drawable/bgr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1800dp"
+        android:nestedScrollingEnabled="true"
+        android:background="@drawable/bgr">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Register your company"
+            android:id="@+id/title1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="false"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:id="@+id/imageView12"
+            android:layout_below="@+id/title1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="#101010" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Applicant Name"
+            android:id="@+id/name1"
+            android:layout_below="@+id/imageView12"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etName1"
+            android:layout_below="@+id/name1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Designation"
+            android:id="@+id/deg1"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@+id/etName1"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etDeg1"
+            android:layout_below="@+id/deg1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Company Name"
+            android:id="@+id/company"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@+id/etDeg1"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etCom"
+            android:layout_below="@+id/company"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:id="@+id/imageView13"
+            android:background="#919191"
+            android:layout_below="@+id/etCom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Office"
+            android:id="@+id/textView15"
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_below="@+id/imageView13"
+            android:layout_alignEnd="@+id/fax1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:id="@+id/emailOff"
+            android:layout_below="@+id/textView15"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/etEmail1"
+            android:layout_below="@+id/emailOff"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telephone"
+            android:id="@+id/phn1"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/etEmail1"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etPhn1"
+            android:layout_below="@+id/phn1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:id="@+id/add1"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/etPhn1"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/etAdd1"
+            android:layout_below="@+id/add1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:id="@+id/city1"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etAdd1"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/etCity1"
+            android:layout_below="@+id/city1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zip Code"
+            android:id="@+id/zip1"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_above="@+id/etCity1"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_marginLeft="40dp" />
+
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etZip1"
+            android:layout_alignTop="@+id/etCity1"
+            android:layout_alignEnd="@+id/imageView13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fax"
+            android:id="@+id/fax1"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/phn1"
+            android:layout_alignEnd="@+id/imageView13"
+            android:layout_marginRight="140dp" />
+
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etFax1"
+            android:layout_above="@+id/add1"
+            android:layout_alignStart="@+id/etZip1" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:id="@+id/imageView14"
+            android:background="#919191"
+            android:layout_below="@+id/etCity1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Factory"
+            android:id="@+id/textView19"
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_below="@+id/imageView14"
+            android:layout_toEndOf="@+id/etCity1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:id="@+id/emailFac"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView19"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/etEmail2"
+            android:layout_below="@+id/emailFac"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telephone"
+            android:id="@+id/phn2"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/etEmail2"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fax"
+            android:id="@+id/fax2"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_marginRight="140dp"
+            android:layout_alignBottom="@+id/phn2"
+            android:layout_alignEnd="@+id/imageView14" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etPhn2"
+            android:layout_below="@+id/phn2"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/etFax2"
+            android:layout_alignTop="@+id/etPhn2"
+            android:layout_alignEnd="@+id/imageView14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:id="@+id/add2"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/etPhn2"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/etAdd2"
+            android:layout_below="@+id/add2"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:id="@+id/city2"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/etAdd2"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zip Code"
+            android:id="@+id/zip2"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/etAdd2"
+            android:layout_alignStart="@+id/fax2" />
+
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/etCity2"
+            android:layout_below="@+id/zip2"
+            android:layout_alignStart="@+id/fax2" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/etZip2"
+            android:layout_below="@+id/city2"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:id="@+id/imageView15"
+            android:background="#919191"
+            android:layout_below="@+id/etCity2"
+            android:layout_alignEnd="@+id/etFax2"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Trade License"
+            android:id="@+id/textView29"
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_below="@+id/imageView15"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number"
+            android:id="@+id/numLic"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView29"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etLic"
+            android:layout_below="@+id/numLic"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/fax2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose File"
+            android:id="@+id/choose1"
+            android:layout_alignBottom="@+id/etLic"
+            android:layout_toEndOf="@+id/textView29" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:id="@+id/imageView16"
+            android:background="#919191"
+            android:layout_below="@+id/etLic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tin Number"
+            android:id="@+id/tin"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/imageView16"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etTinum"
+            android:layout_below="@+id/tin"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/etLic" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose File"
+            android:id="@+id/choose2"
+            android:layout_alignBottom="@+id/etTinum"
+            android:layout_alignEnd="@+id/etCity2" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:id="@+id/imageView17"
+            android:background="#919191"
+            android:layout_below="@+id/etTinum"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tin"
+            android:id="@+id/textView32"
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_below="@+id/imageView16"
+            android:layout_alignStart="@+id/textView15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Board of Investment"
+            android:id="@+id/textView33"
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:gravity="center"
+            android:layout_below="@+id/imageView17"
+            android:layout_toEndOf="@+id/emailFac"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enclosed File"
+            android:id="@+id/textView34"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/choose3"
+            android:layout_toStartOf="@+id/textView33"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose File"
+            android:id="@+id/choose3"
+            android:layout_below="@+id/textView33"
+            android:layout_alignStart="@+id/choose2" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:id="@+id/imageView18"
+            android:background="#919191"
+            android:layout_below="@+id/choose3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Propritor/Managing Director"
+            android:id="@+id/textView35"
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:gravity="center"
+            android:layout_below="@+id/imageView18"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Name"
+            android:id="@+id/name2"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@+id/textView35"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etName2"
+            android:layout_below="@+id/name2"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/etCity2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Designation"
+            android:id="@+id/deg2"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_alignTop="@+id/name2"
+            android:layout_alignEnd="@+id/textView33" />
+
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/etDeg2"
+            android:layout_below="@+id/deg2"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:id="@+id/imageView19"
+            android:background="#919191"
+            android:layout_below="@+id/etName2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Representative"
+            android:id="@+id/textView38"
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_below="@+id/imageView19"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Name"
+            android:id="@+id/name3"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@+id/textView38"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etName3"
+            android:layout_below="@+id/name3"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/textView32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Designation"
+            android:id="@+id/deg3"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_above="@+id/etName3"
+            android:layout_alignStart="@+id/deg2" />
+
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etDeg3"
+            android:layout_alignTop="@+id/etName3"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Photo"
+            android:id="@+id/textView41"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@+id/etName3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose File"
+            android:id="@+id/choose4"
+            android:layout_below="@+id/etDeg3"
+            android:layout_toEndOf="@+id/textView38" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Password"
+            android:id="@+id/password"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@+id/choose4"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/etPass"
+            android:layout_below="@+id/choose4"
+            android:layout_alignEnd="@+id/choose1"
+            android:layout_alignStart="@+id/textView29" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:id="@+id/imageView20"
+            android:background="#101010"
+            android:layout_below="@+id/etPass"
+            android:layout_alignEnd="@+id/etDeg3"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="BY CLICKING REGISTER YOU AGREE TO THE  TERMS &amp; CONDITIONS OF BARSMA  YOU ALSO AGREE TO PAY THE FOLLOWING FEES:"
+            android:id="@+id/textView43"
+            android:layout_below="@+id/imageView20"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold|italic"
+            android:textSize="15dp"
+            android:typeface="monospace"
+            android:textColor="#ff2200"
+            android:layout_alignStart="@+id/imageView19"
+            android:layout_alignEnd="@+id/imageView19" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView21"
+            android:background="#101010"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/textView43"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView22"
+            android:background="#101010"
+            android:layout_below="@+id/imageView21"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="60dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Membership Fee:"
+            android:id="@+id/textView44"
+            android:layout_below="@+id/imageView21"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="25000/- (Twenty Five Thousand) Only."
+            android:id="@+id/textView45"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/imageView22"
+            android:layout_toEndOf="@+id/etName2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yearly Subscription Fee:"
+            android:id="@+id/textView46"
+            android:layout_below="@+id/imageView22"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="100000/- (One Lac) Only."
+            android:id="@+id/textView47"
+            android:layout_marginLeft="80dp"
+            android:layout_alignTop="@+id/imageView22"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/etZip2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/breg2"
+            android:layout_below="@+id/textView47"
+            android:layout_alignEnd="@+id/textView29"
+            android:layout_marginTop="25dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:id="@+id/bclose"
+            android:layout_alignTop="@+id/breg2"
+            android:layout_alignEnd="@+id/textView47" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Copyright 2016. RRM | Sense Global SysTech Ltd."
+            android:id="@+id/textView11"
+            android:textColor="@android:color/secondary_text_light"
+            android:gravity="center_horizontal"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</ScrollView>
